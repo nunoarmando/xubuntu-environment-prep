@@ -131,15 +131,15 @@ sudo sed -i 's/localhost/localhost\
 
 # Autostart
 
-cp ./cfg/autostart/ ~/.config/autostart/
+cp -R ./cfg/autostart/ ~/.config/autostart/
 
 # Cairo-dock
 
-cp ./cfg/cairo/ ~/.config/cairo-dock/
+cp -R ./cfg/cairo-dock/ ~/.config/cairo-dock/
 
 # File manager shortcuts
 
-cp ./cfg/gtk-3.0/ ~/.config/gtk-3.0/
+cp -R ./cfg/gtk-3.0/ ~/.config/gtk-3.0/
 
 
 ###############################################################
