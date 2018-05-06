@@ -15,6 +15,9 @@
 #### How to install
 
 ```
+sudo apt-get update
+sudo apt-get install -y git
+
 git clone https://github.com/nunoarmando/xubuntu-environment-prep.git naas_x_prep
 cd naas_x_prep
 chmod -x xubuntu-environment-prep.sh
