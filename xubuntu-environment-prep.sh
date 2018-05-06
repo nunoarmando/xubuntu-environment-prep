@@ -86,12 +86,21 @@ sudo usermod -aG docker $USER_TO_DOCKER
 
 sudo apt-get purge -y `dpkg -l | grep php| awk '{print $2}' |tr "\n" " "`
 
-# LIST_OF_EXTENSIONS="xml mcrypt mysql gd json mbstring pdo-mysql mysqli zip intl soap"
-LIST_OF_EXTENSIONS="xml mcrypt gd mbstring pdo-mysql mysqli zip"
-#PHP_VERSION="5.6"
-PHP_VERSION="7.2"
-sudo apt-get install -y php$PHP_VERSION
-sudo apt-get install -y php$PHP_VERSION-$LIST_OF_EXTENSIONS
+#PHP_VERSION="php5.6"
+PHP_VERSION="php7.1"
+sudo apt-get install -y \
+	$PHP_VERSION \
+	$PHP_VERSION-xml \
+	$PHP_VERSION-mcrypt \
+	$PHP_VERSION-mysql \
+	$PHP_VERSION-gd \
+	$PHP_VERSION-json \
+	$PHP_VERSION-mbstring \
+	$PHP_VERSION-pdo-mysql \
+	$PHP_VERSION-mysqli \
+	$PHP_VERSION-zip \
+	$PHP_VERSION-intl \
+	$PHP_VERSION-soap
 
 # PHP - Composer
 
