@@ -1,6 +1,14 @@
 #!/bin/sh
 
 ###############################################################
+# User variables
+###############################################################
+
+U_USER=nuno
+U_GIT_USER=nunoarmando@gmail.com
+U_GIT_NAME=Nuno Serrano
+
+###############################################################
 # Update system
 ###############################################################
 
@@ -74,8 +82,7 @@ LIST_OF_APPS="cairo-dock code docker-ce docker-compose google-chrome-stable wine
 sudo apt-get install -y $LIST_OF_APPS
 
 # Extra settings for the applications
-USER_TO_DOCKER=nuno
-sudo usermod -aG docker $USER_TO_DOCKER
+sudo usermod -aG docker $U_USER
 
 
 ###############################################################
@@ -152,9 +159,11 @@ cp -R ./cfg/gtk-3.0/ ~/.config/gtk-3.0/
 
 
 ###############################################################
-# GIT projects - clone
+# GIT configuration
 ###############################################################
 
+git config --global user.email "$U_GIT_USER"
+git config --global user.name "$U_GIT_NAME"
 
 
 ###############################################################
