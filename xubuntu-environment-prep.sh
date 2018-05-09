@@ -58,6 +58,11 @@ sudo add-apt-repository -y ppa:ondrej/php
 wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add - 
 sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
 
+# Skype
+
+curl https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add -
+echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.list.d/skypeforlinux.list
+
 
 
 
@@ -78,7 +83,7 @@ sudo apt-get update
 # Install a list of applications - external
 ###############################################################
 
-LIST_OF_APPS="cairo-dock code docker-ce docker-compose google-chrome-stable winehq-stable"
+LIST_OF_APPS="cairo-dock code docker-ce docker-compose google-chrome-stable winehq-stable filezilla skypeforlinux"
 sudo apt-get install -y $LIST_OF_APPS
 
 # Extra settings for the applications
