@@ -14,6 +14,23 @@
 - Config - Current Apache port (80 => 81) to have 80 port free for docker
 - Config - Hosts (Add needed hosts)
 
+#### List of applications to remove
+
+- pidgin
+- gnome-mines
+- gnome-sudoku
+- sgt-puzzles
+- xfce4-appfinder
+- xfce4-notes
+- onboard
+- orage
+- xfce4-screenshooter
+- libreoffice-math
+- catfish
+- thunderbird
+- transmission-gtk
+- transmission-common
+
 #### How to install
 
 ```
