@@ -4,9 +4,9 @@
 # User variables
 ###############################################################
 
-U_USER=nuno
-U_GIT_USER=nunoarmando@gmail.com
-U_GIT_NAME=Nuno Serrano
+U_USER="nuno"
+U_GIT_USER="nunoarmando@gmail.com"
+U_GIT_NAME="Nuno Serrano"
 
 ###############################################################
 # Update system
@@ -91,7 +91,7 @@ sudo usermod -aG docker $U_USER
 
 
 ###############################################################
-# Other applications install
+# Install other applications
 ###############################################################
 
 # PHP
@@ -119,6 +119,12 @@ sudo apt-get install -y \
 sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
 
+###############################################################
+# Remove system applications
+###############################################################
+
+LIST_OF_APPS_TO_REMOVE="pidgin gnome-mines gnome-sudoku sgt-puzzles xfce4-appfinder xfce4-notes onboard orage xfce4-screenshooter libreoffice-math catfish thunderbird  transmission-gtk transmission-common"
+sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
 
 ###############################################################
 # Other configurations
@@ -170,7 +176,7 @@ cp -R ./cfg/gtk-3.0/ ~/.config/gtk-3.0/
 git config --global user.email "$U_GIT_USER"
 git config --global user.name "$U_GIT_NAME"
 
-
+	
 ###############################################################
 
 
