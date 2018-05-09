@@ -8,6 +8,8 @@
 - Docker + Docker-compose
 - Chrome
 - Wine
+- Filezilla
+- Skype
 - PHP (5.6 or 7.1) + Composer
 - Config - Current Apache port (80 => 81) to have 80 port free for docker
 - Config - Hosts (Add needed hosts)
