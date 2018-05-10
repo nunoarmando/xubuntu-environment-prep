@@ -21,7 +21,13 @@ sudo apt-get update
 # Install a list of applications - system
 ###############################################################
 
-LIST_OF_APPS_SYSTEM="apt-transport-https ca-certificates curl gnupg2 software-properties-common"
+LIST_OF_APPS_SYSTEM="\
+	apt-transport-https \
+	ca-certificates \
+	curl \
+	gnupg2 \
+	software-properties-common \
+	"
 sudo apt-get install -y $LIST_OF_APPS_SYSTEM
 
 
@@ -83,7 +89,16 @@ sudo apt-get update
 # Install a list of applications - external
 ###############################################################
 
-LIST_OF_APPS="cairo-dock code docker-ce docker-compose google-chrome-stable winehq-stable filezilla skypeforlinux"
+LIST_OF_APPS="\
+	cairo-dock \
+	code \
+	docker-ce \
+	docker-compose \
+	google-chrome-stable \
+	winehq-stable \
+	filezilla \
+	skypeforlinux\
+	"
 sudo apt-get install -y $LIST_OF_APPS
 
 # Extra settings for the applications
@@ -123,7 +138,18 @@ sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/loca
 # Remove system applications
 ###############################################################
 
-LIST_OF_APPS_TO_REMOVE="pidgin gnome-mines gnome-sudoku sgt-puzzles xfce4-appfinder xfce4-notes onboard orage xfce4-screenshooter libreoffice-math catfish thunderbird  transmission-gtk transmission-common"
+LIST_OF_APPS_TO_REMOVE="\
+	pidgin \
+	gnome-mines gnome-sudoku sgt-puzzles \
+	xfce4-appfinder xfce4-notes xfce4-screenshooter \
+	onboard \
+	orage \
+	libreoffice-math \
+	catfish \
+	thunderbird \
+	transmission-gtk \
+	transmission-common\
+	"
 sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
 
 ###############################################################
