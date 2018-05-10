@@ -93,8 +93,7 @@ echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.li
 # Update system
 ###############################################################
 
-sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove
-sudo apt-get update
+sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y && sudo apt-get update
 
 ###############################################################
 # Install a list of applications - external
