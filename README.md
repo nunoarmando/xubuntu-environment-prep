@@ -44,12 +44,12 @@ sudo apt-get update && sudo apt-get install -y git
 ##### For Xubuntu 17.04
 
 ```
-git clone https://github.com/nunoarmando/xubuntu-environment-prep.git naas_x_prep && cd naas_x_prep && sudo sh xubuntu-environment-prep.17.04.sh
+git clone https://github.com/nunoarmando/xubuntu-environment-prep.git naas_x_prep && cd naas_x_prep && sudo sh xubuntu-environment-prep-17.04.sh
 ```
 
 ##### For Xubuntu 18.04
 
 ```
-git clone https://github.com/nunoarmando/xubuntu-environment-prep.git naas_x_prep && cd naas_x_prep && sudo sh xubuntu-environment-prep.18.04.sh
+git clone https://github.com/nunoarmando/xubuntu-environment-prep.git naas_x_prep && cd naas_x_prep && sudo sh xubuntu-environment-prep-18.04.sh
 ```
 
