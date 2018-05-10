@@ -148,7 +148,8 @@ sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/loca
 # Update system
 ###############################################################
 
-sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y && sudo apt-get update
+#sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y && sudo apt-get update
+sudo apt-get update
 
 
 ###############################################################
@@ -236,7 +237,7 @@ git config --list
 # Clean system
 ###############################################################
 
-sudo apt-get -y clean && sudo apt-get -y autoclean && sudo apt-get -y autoremove
+#sudo apt-get -y clean && sudo apt-get -y autoclean && sudo apt-get -y autoremove
 sudo du -sh /var/cache/apt
 sudo apt-get clean
 sudo du -sh /var/cache/apt
