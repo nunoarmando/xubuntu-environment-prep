@@ -8,11 +8,20 @@ U_USER="nuno"
 U_GIT_USER="nunoarmando@gmail.com"
 U_GIT_NAME="Nuno Serrano"
 
+
+###############################################################
+# Update system
+###############################################################
+
+sudo apt-get clean
+sudo apt-get autoclean
+sudo apt-get update
+
+
 ###############################################################
 # Release upgrade
 ###############################################################
 
-# do-release-upgrade -q
 sudo apt-get dist-upgrade -y
 
 
