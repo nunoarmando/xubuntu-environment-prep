@@ -145,7 +145,14 @@ sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/loca
 
 
 ###############################################################
-# Remove system applications
+# Update system
+###############################################################
+
+sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y && sudo apt-get update
+
+
+###############################################################
+# Remove system applications - 17.04
 ###############################################################
 
 LIST_OF_APPS_TO_REMOVE="\
@@ -161,6 +168,17 @@ LIST_OF_APPS_TO_REMOVE="\
 	transmission-common\
 	"
 sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
+
+
+###############################################################
+# Remove system applications - 18.04
+###############################################################
+
+LIST_OF_APPS_TO_REMOVE="\
+	gnote \
+	"
+sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
+
 
 ###############################################################
 # Other configurations
