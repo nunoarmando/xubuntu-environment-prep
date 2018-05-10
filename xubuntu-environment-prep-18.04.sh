@@ -102,7 +102,7 @@ sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y && sudo a
 ###############################################################
 
 LIST_OF_APPS="\
-	cairo-dock \
+	cairo-dock cairo-dock-plug-ins \
 	code \
 	docker-ce \
 	docker-compose \
