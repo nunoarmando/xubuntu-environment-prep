@@ -23,6 +23,7 @@
 - xfce4-appfinder
 - xfce4-notes
 - xfce4-screenshooter
+- gnote
 - onboard
 - orage
 - libreoffice-math
