@@ -13,16 +13,17 @@ U_GIT_NAME="Nuno Serrano"
 # Update system
 ###############################################################
 
-sudo apt-get clean
-sudo apt-get autoclean
-sudo apt-get update
+sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y && sudo apt-get update
 
 
 ###############################################################
 # Release upgrade
 ###############################################################
 
-sudo apt-get dist-upgrade -y
+sudo apt-get upgrade && sudo apt-get dist-upgrade -y
+
+sudo do-release-upgrade -c && sudo do-release-upgrade -q
+sudo do-release-upgrade -f DistUpgradeViewNonInteractive
 
 
 ###############################################################
@@ -93,14 +94,8 @@ echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.li
 # Update system
 ###############################################################
 
-# sudo apt-get -f install
-# sudo apt-get clean
-# sudo apt-get autoclean
-
+sudo apt-get clean && sudo apt-get autoclean && sudo apt-get autoremove
 sudo apt-get update
-# sudo apt-get upgrade
-# sudo apt-get autoremove
-
 
 ###############################################################
 # Install a list of applications - external
@@ -218,13 +213,14 @@ cp -R ./cfg/gtk-3.0/ ~/.config/gtk-3.0/
 
 git config --global user.email "$U_GIT_USER"
 git config --global user.name "$U_GIT_NAME"
+git config --list
 
 
 ###############################################################
 # Clean system
 ###############################################################
 
-sudo apt-get -y autoremove
+sudo apt-get -y clean && sudo apt-get -y autoclean && sudo apt-get -y autoremove
 sudo du -sh /var/cache/apt
 sudo apt-get clean
 sudo du -sh /var/cache/apt
