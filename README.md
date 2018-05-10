@@ -22,9 +22,9 @@
 - sgt-puzzles
 - xfce4-appfinder
 - xfce4-notes
+- xfce4-screenshooter
 - onboard
 - orage
-- xfce4-screenshooter
 - libreoffice-math
 - catfish
 - thunderbird
