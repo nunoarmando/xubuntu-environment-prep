@@ -20,7 +20,7 @@ sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y && sudo a
 # Release upgrade
 ###############################################################
 
-sudo apt-get upgrade && sudo apt-get dist-upgrade -y
+sudo apt-get upgrade -y && sudo apt-get dist-upgrade -y
 
 sudo do-release-upgrade -c && sudo do-release-upgrade -q
 sudo do-release-upgrade -f DistUpgradeViewNonInteractive
