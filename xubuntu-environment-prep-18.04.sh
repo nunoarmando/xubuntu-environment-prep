@@ -64,6 +64,8 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 wget -nc https://dl.winehq.org/wine-builds/Release.key
 sudo apt-key add Release.key
 sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
+# winne repository fix
+sudo sed -i 's/wine-builds\/ubuntu\/ bionic/wine-builds\/ubuntu\/ artful/' /etc/apt/sources.list
 
 # Docker
 
