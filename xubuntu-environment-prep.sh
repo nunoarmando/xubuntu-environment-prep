@@ -9,6 +9,14 @@ U_GIT_USER="nunoarmando@gmail.com"
 U_GIT_NAME="Nuno Serrano"
 
 ###############################################################
+# Release upgrade
+###############################################################
+
+# do-release-upgrade -q
+sudo apt-get dist-upgrade -y
+
+
+###############################################################
 # Update system
 ###############################################################
 
@@ -202,8 +210,22 @@ cp -R ./cfg/gtk-3.0/ ~/.config/gtk-3.0/
 git config --global user.email "$U_GIT_USER"
 git config --global user.name "$U_GIT_NAME"
 
-	
+
+###############################################################
+# Clean system
 ###############################################################
 
+sudo apt-get -y autoremove
+sudo du -sh /var/cache/apt
+sudo apt-get clean
+sudo du -sh /var/cache/apt
+
+###############################################################
+# System information
+###############################################################
+
+lsb_release -a
+
+###############################################################
 
 
