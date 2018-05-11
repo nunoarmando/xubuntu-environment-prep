@@ -62,7 +62,7 @@ sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode s
 wget -nc https://dl.winehq.org/wine-builds/Release.key
 sudo apt-key add Release.key
 sudo apt-add-repository https://dl.winehq.org/wine-builds/ubuntu/
-# winne repository fix
+# wine repository fix
 sudo sed -i 's/wine-builds\/ubuntu\/ bionic/wine-builds\/ubuntu\/ artful/' /etc/apt/sources.list
 
 # Docker
@@ -86,6 +86,10 @@ sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable
 curl https://repo.skype.com/data/SKYPE-GPG-KEY | sudo apt-key add -
 echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.list.d/skypeforlinux.list
 
+# Dockbarx
+
+sudo add-apt-repository ppa:xuzhen666/dockbarx -y
+
 
 ###############################################################
 # Update system
@@ -108,6 +112,7 @@ LIST_OF_APPS="\
 	filezilla \
 	skypeforlinux \
 	papirus-icon-theme \
+	dockbarx xfce4-dockbarx-plugin \
 	"
 sudo apt-get install -y $LIST_OF_APPS
 
