@@ -216,8 +216,8 @@ sudo sed -i 's/localhost/localhost\
 # User Configurations
 ###############################################################
 
-cp -R ./cfg/* ~/.config/
-cp -R ./Templates/* ~/Templates/
+cp -rf ./cfg/* ~/.config/
+cp -rf ./Templates/* ~/Templates/
 
 ###############################################################
 # GIT configuration
