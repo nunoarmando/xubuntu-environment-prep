@@ -231,7 +231,7 @@ sudo sed -i 's/localhost/localhost\
 #cp -R ./cfg/menus/ ~/.config/menus/
 #cp -R ./cfg/xfce4/ ~/.config/xfce4/
 
-cp -R ./cfg ~/.config/
+cp -R ./cfg/* ~/.config/
 
 ###############################################################
 # GIT configuration
