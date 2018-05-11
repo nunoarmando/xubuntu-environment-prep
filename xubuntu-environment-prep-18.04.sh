@@ -218,16 +218,20 @@ sudo sed -i 's/localhost/localhost\
 
 # Autostart
 
-cp -R ./cfg/autostart/ ~/.config/autostart/
+#cp -R ./cfg/autostart/ ~/.config/autostart/
 
 # Cairo-dock
 
-cp -R ./cfg/cairo-dock/ ~/.config/cairo-dock/
+# cp -R ./cfg/cairo-dock/ ~/.config/cairo-dock/
 
 # File manager shortcuts
 
-cp -R ./cfg/gtk-3.0/ ~/.config/gtk-3.0/
+#cp -R ./cfg/gtk-3.0/ ~/.config/gtk-3.0/
 
+#cp -R ./cfg/menus/ ~/.config/menus/
+#cp -R ./cfg/xfce4/ ~/.config/xfce4/
+
+cp -R ./cfg ~/.config/
 
 ###############################################################
 # GIT configuration
