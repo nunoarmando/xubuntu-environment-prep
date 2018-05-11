@@ -29,9 +29,7 @@ sudo do-release-upgrade -c && sudo do-release-upgrade -f DistUpgradeViewNonInter
 # Update system
 ###############################################################
 
-sudo apt-get clean
-sudo apt-get autoclean
-sudo apt-get update
+sudo apt-get clean && sudo apt-get autoclean && sudo apt-get update
 
 
 ###############################################################
@@ -99,15 +97,17 @@ sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y && sudo a
 # Install a list of applications - external
 ###############################################################
 
+# cairo-dock cairo-dock-plug-ins \
+	
 LIST_OF_APPS="\
-	cairo-dock cairo-dock-plug-ins \
 	code \
 	docker-ce \
 	docker-compose \
 	google-chrome-stable \
 	winehq-stable \
 	filezilla \
-	skypeforlinux\
+	skypeforlinux \
+	papirus-icon-theme \
 	"
 sudo apt-get install -y $LIST_OF_APPS
 
@@ -156,29 +156,29 @@ sudo apt-get update
 # Remove system applications - 17.04
 ###############################################################
 
-LIST_OF_APPS_TO_REMOVE="\
-	pidgin \
-	gnome-mines gnome-sudoku sgt-puzzles \
-	xfce4-appfinder xfce4-notes xfce4-screenshooter \
-	onboard \
-	orage \
-	libreoffice-math \
-	catfish \
-	thunderbird \
-	transmission-gtk \
-	transmission-common\
-	"
-sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
+# LIST_OF_APPS_TO_REMOVE="\
+# 	pidgin \
+# 	gnome-mines gnome-sudoku sgt-puzzles \
+# 	xfce4-appfinder xfce4-notes xfce4-screenshooter \
+# 	onboard \
+# 	orage \
+# 	libreoffice-math \
+# 	catfish \
+# 	thunderbird \
+# 	transmission-gtk \
+# 	transmission-common\
+# 	"
+# sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
 
 
 ###############################################################
 # Remove system applications - 18.04
 ###############################################################
 
-LIST_OF_APPS_TO_REMOVE="\
-	gnote \
-	"
-sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
+# LIST_OF_APPS_TO_REMOVE="\
+# 	gnote \
+# 	"
+# sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
 
 
 ###############################################################
@@ -237,7 +237,7 @@ git config --list
 # Clean system
 ###############################################################
 
-#sudo apt-get -y clean && sudo apt-get -y autoclean && sudo apt-get -y autoremove
+sudo apt-get -y clean && sudo apt-get -y autoclean && sudo apt-get -y autoremove
 sudo du -sh /var/cache/apt
 sudo apt-get clean
 sudo du -sh /var/cache/apt
