@@ -1,0 +1,7 @@
+[Added Associations]
+text/plain=mousepad.desktop;
+application/x-desktop=mousepad.desktop;
+text/x-log=mousepad.desktop;
+application/octet-stream=exo-file-manager.desktop;
+application/xml=code.desktop;mousepad.desktop;exo-web-browser.desktop;
+text/x-scheme=mousepad.desktop;
