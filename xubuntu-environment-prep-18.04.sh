@@ -216,9 +216,9 @@ sudo sed -i 's/localhost/localhost\
 # User Configurations
 ###############################################################
 
-cp -rf ./cfg/* ~/.config/
-cp -rf ./cfg_dockbarx/* ~/.dockbarx/
-cp -rf ./Templates/* ~/Templates/
+sudo cp -rf ./cfg/* ~/.config/
+sudo cp -rf ./cfg_dockbarx/* ~/.dockbarx/
+sudo cp -rf ./Templates/* ~/Templates/
 
 ###############################################################
 # GIT configuration
