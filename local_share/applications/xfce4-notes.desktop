@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Notes
+NoDisplay=true
+Comment=Ideal for your quick notes
+Icon=xfce4-notes-plugin
+OnlyShowIn=XFCE;GNOME;
+TryExec=xfce4-notes
+Exec=xfce4-notes
+Actions=
+Categories=GTK;TrayIcon;Utility;

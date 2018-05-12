@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Thunderbird Mail
+GenericName=Mail Client
+NoDisplay=true
+Comment=Send and receive mail with Thunderbird
+Icon=thunderbird
+Exec=thunderbird %u
+Actions=Compose;Contacts;
+MimeType=x-scheme-handler/mailto;application/x-xpinstall;
+Categories=Application;Email;Network;
+Keywords=Email;E-mail;Newsgroup;Feed;RSS;
+StartupNotify=true
+
+[Desktop Action Compose]
+Name=Criar nova mensagem
+Exec=thunderbird -compose
+
+[Desktop Action Contacts]
+Name=Contactos
+Exec=thunderbird -addressbook

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Dictionary
+GenericName=Cliente de Dicionário
+NoDisplay=true
+Comment=A client program to query different dictionaries.
+Icon=xfce4-dict
+Exec=xfce4-dict
+Actions=
+Categories=Dictionary;GTK;Office;TextTools;
+StartupNotify=true

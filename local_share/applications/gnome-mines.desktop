@@ -1,0 +1,24 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Mines
+NoDisplay=true
+Comment=Clear hidden mines from a minefield
+Icon=gnome-mines
+Exec=gnome-mines
+Actions=Small;Medium;Big;
+Categories=GNOME;GTK;Game;LogicGame;
+Keywords=minesweeper;
+StartupNotify=true
+
+[Desktop Action Small]
+Name=Pequeno
+Exec=gnome-mines --small
+
+[Desktop Action Medium]
+Name=Médio
+Exec=gnome-mines --medium
+
+[Desktop Action Big]
+Name=Grande
+Exec=gnome-mines --big

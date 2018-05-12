@@ -1,0 +1,12 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Orage Globaltime
+GenericName=Horário global
+NoDisplay=true
+Comment=Show clocks from different countries
+Icon=orage_globaltime
+Exec=globaltime
+Actions=
+Categories=Clock;GTK;Office;Utility;X-XFCE;
+StartupNotify=true

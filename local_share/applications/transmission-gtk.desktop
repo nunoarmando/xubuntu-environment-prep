@@ -1,0 +1,22 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=Transmission BitTorrent Client
+GenericName=BitTorrent Client
+NoDisplay=true
+Comment=Download and share files over BitTorrent
+Icon=transmission
+TryExec=transmission-gtk
+Exec=transmission-gtk %U
+Actions=Pause;Minimize;
+MimeType=application/x-bittorrent;x-scheme-handler/magnet;
+Categories=FileTransfer;GTK;Network;P2P;
+StartupNotify=true
+
+[Desktop Action Pause]
+Name=Start Transmission with All Torrents Paused
+Exec=transmission-gtk --paused
+
+[Desktop Action Minimize]
+Name=Start Transmission Minimized
+Exec=transmission-gtk --minimized

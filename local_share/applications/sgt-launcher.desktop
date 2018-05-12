@@ -1,0 +1,14 @@
+[Desktop Entry]
+Version=1.1
+Type=Application
+Name=SGT Puzzles Collection
+GenericName=Coleccção de pequenos jogos quebra-cabeças
+NoDisplay=true
+Comment=Launcher for Simon Tatham&apos;s Portable Puzzle Collection
+Icon=sgt-launcher
+Exec=/usr/games/sgt-launcher
+Actions=
+Categories=Game;LogicGame;
+Keywords=Jogos;Quebra-cabeças;
+StartupNotify=true
+StartupWMClass=sgt-launcher
