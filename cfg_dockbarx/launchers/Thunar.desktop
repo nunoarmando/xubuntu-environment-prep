@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Exec=exo-open --launch FileManager %u
+NoDisplay=true
+Name=File Manager
+Icon=system-file-manager
+Comment=Browse the file system
+Path=/home/nuno
+Terminal=false
+StartupNotify=true

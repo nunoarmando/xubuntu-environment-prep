@@ -217,6 +217,7 @@ sudo sed -i 's/localhost/localhost\
 ###############################################################
 
 cp -rf ./cfg/* ~/.config/
+cp -rf ./cfg_dockbarx/* ~/.dockbarx/
 cp -rf ./Templates/* ~/Templates/
 
 ###############################################################
