@@ -10,5 +10,3 @@ sudo cp -rfv ./Pictures/* ~/Pictures/
 sudo cp -rfv ./local_share/* ~/.local/share/
 sudo cp -rfv ./etc/* /etc/
 
- sudo chown -R $USER ~/.config/*
-
