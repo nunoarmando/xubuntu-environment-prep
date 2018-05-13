@@ -89,18 +89,18 @@ sudo apt-get update
 # User Configurations
 ###############################################################
 
-xfce4-panel --quit
-pkill xfconfd
+#xfce4-panel --quit
+#pkill xfconfd
 
-sudo cp -rfv ./cfg/* ~/.config/
-sudo mkdir ./cfg_dockbarx/
-sudo cp -rfv ./cfg_dockbarx/* ~/.dockbarx/
-sudo cp -rfv ./Templates/* ~/Templates/
-sudo cp -rfv ./Pictures/* ~/Pictures/
-sudo cp -rfv ./local_share/* ~/.local/share/
-sudo cp -rfv ./etc/* /etc/
+# sudo cp -rfv ./cfg/* ~/.config/
+# sudo mkdir ./cfg_dockbarx/
+# sudo cp -rfv ./cfg_dockbarx/* ~/.dockbarx/
+# sudo cp -rfv ./Templates/* ~/Templates/
+# sudo cp -rfv ./Pictures/* ~/Pictures/
+# sudo cp -rfv ./local_share/* ~/.local/share/
+# sudo cp -rfv ./etc/* /etc/
 
-xfce4-panel
+#xfce4-panel
 
 ###############################################################
 # GIT configuration
