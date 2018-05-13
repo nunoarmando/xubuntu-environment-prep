@@ -88,7 +88,7 @@ echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.li
 
 # Dockbarx
 
-sudo add-apt-repository ppa:xuzhen666/dockbarx -y
+sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 
 
 ###############################################################
@@ -150,43 +150,6 @@ sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/loca
 
 
 ###############################################################
-# Update system
-###############################################################
-
-#sudo apt-get clean && sudo apt-get autoclean && sudo apt autoremove -y && sudo apt-get update
-sudo apt-get update
-
-
-###############################################################
-# Remove system applications - 17.04
-###############################################################
-
-# LIST_OF_APPS_TO_REMOVE="\
-# 	pidgin \
-# 	gnome-mines gnome-sudoku sgt-puzzles \
-# 	xfce4-appfinder xfce4-notes xfce4-screenshooter \
-# 	onboard \
-# 	orage \
-# 	libreoffice-math \
-# 	catfish \
-# 	thunderbird \
-# 	transmission-gtk \
-# 	transmission-common\
-# 	"
-# sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
-
-
-###############################################################
-# Remove system applications - 18.04
-###############################################################
-
-# LIST_OF_APPS_TO_REMOVE="\
-# 	gnote \
-# 	"
-# sudo apt-get remove -y $LIST_OF_APPS_TO_REMOVE
-
-
-###############################################################
 # Other configurations
 ###############################################################
 
@@ -211,14 +174,6 @@ sudo sed -i 's/localhost/localhost\
 127.0.0.1	\t	api.dev.eu \
 127.0.0.1	\t	my.dev.eu \
 /' /etc/hosts
-
-###############################################################
-# User Configurations
-###############################################################
-
-sudo cp -rfv ./cfg/ ~/.config/
-sudo cp -rfv ./cfg_dockbarx/ ~/.dockbarx/
-sudo cp -rfv ./Templates/ ~/Templates/
 
 ###############################################################
 # GIT configuration
