@@ -89,8 +89,8 @@ sudo apt-get update
 # User Configurations
 ###############################################################
 
-sudo xfce4-panel --quit
-sudo pkill xfconfd
+xfce4-panel --quit
+pkill xfconfd
 
 sudo cp -rfv ./cfg/* ~/.config/
 sudo mkdir ./cfg_dockbarx/
@@ -100,7 +100,7 @@ sudo cp -rfv ./Pictures/* ~/Pictures/
 sudo cp -rfv ./local_share/* ~/.local/share/
 sudo cp -rfv ./etc/* /etc/
 
-sudo xfce4-panel
+xfce4-panel
 
 ###############################################################
 # GIT configuration
