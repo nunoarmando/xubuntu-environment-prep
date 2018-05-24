@@ -4,7 +4,7 @@
 # User variables
 ###############################################################
 
-U_USER="Davide"
+U_USER="davide"
 U_GIT_USER="davide@smart-gdpr.eu"
 U_GIT_NAME="DavideG94"
 
@@ -71,6 +71,7 @@ LIST_OF_APPS="\
 	docker-compose \
 	google-chrome-stable \
 	filezilla \
+	meld \
 	"
 sudo apt-get install -y $LIST_OF_APPS
 
