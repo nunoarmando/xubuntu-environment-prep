@@ -9,6 +9,7 @@
 - Wine
 - Filezilla
 - Skype
+- Meld
 - PHP (5.6 or 7.1) + Composer
 - Config - Current Apache port (80 => 81) to have 80 port free for Docker
 - Config - Hosts (Add needed hosts)
