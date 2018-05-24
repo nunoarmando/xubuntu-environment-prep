@@ -111,6 +111,7 @@ LIST_OF_APPS="\
 	winehq-stable \
 	filezilla \
 	skypeforlinux \
+	meld \
 	papirus-icon-theme \
 	dockbarx xfce4-dockbarx-plugin \
 	"
