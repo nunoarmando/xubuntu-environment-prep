@@ -40,4 +40,15 @@
 	<patterns>*.asc,*.brf,*.css,*.doc,*.docm,*.docx,*.dotm,*.dotx,*.fodg,*.fodp,*.fods,*.fodt,*.gif,*.htm,*.html,*.jpe,*.jpeg,*.jpg,*.odb,*.odf,*.odg,*.odm,*.odp,*.ods,*.odt,*.otg,*.oth,*.otp,*.ots,*.ott,*.pbm,*.pdf,*.pgm,*.png,*.pnm,*.pot,*.potm,*.potx,*.ppm,*.ppt,*.pptm,*.pptx,*.rtf,*.shtml,*.srt,*.text,*.tif,*.tiff,*.txt,*.xbm,*.xls,*.xlsb,*.xlsm,*.xlsx,*.xltm,*.xltx,*.xpm,*.xwd</patterns>
 	<directories/>
 </action>
+<action>
+	<icon>meld</icon>
+	<name>Compare</name>
+	<unique-id>1527288137611815-1</unique-id>
+	<command>meld %F</command>
+	<description></description>
+	<patterns>*</patterns>
+	<directories/>
+	<other-files/>
+	<text-files/>
+</action>
 </actions>
