@@ -90,6 +90,10 @@ echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.li
 
 sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 
+# Google Drive
+
+sudo add-apt-repository ppa:alessandro-strada/ppa
+	
 
 ###############################################################
 # Update system
@@ -114,6 +118,7 @@ LIST_OF_APPS="\
 	meld \
 	papirus-icon-theme \
 	dockbarx xfce4-dockbarx-plugin \
+	google-drive-ocamlfuse \
 	"
 sudo apt-get install -y $LIST_OF_APPS
 
@@ -176,6 +181,8 @@ sudo sed -i 's/localhost/localhost\
 127.0.0.1	\t	my.dev.eu \
 /' /etc/hosts
 
+
+
 ###############################################################
 # GIT configuration
 ###############################################################
@@ -201,4 +208,10 @@ sudo du -sh /var/cache/apt
 lsb_release -a
 
 ###############################################################
+# Google Drive
+###############################################################
+
+sudo mkdir ~/drive
+google-drive-ocamlfuse ~/drive
+
 
