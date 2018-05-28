@@ -92,7 +92,7 @@ sudo add-apt-repository -y ppa:xuzhen666/dockbarx
 
 # Google Drive
 
-sudo add-apt-repository ppa:alessandro-strada/ppa
+sudo add-apt-repository -y ppa:alessandro-strada/ppa
 	
 
 ###############################################################
@@ -214,14 +214,14 @@ lsb_release -a
 ###############################################################
 
 sudo mkdir ~/drive
-google-drive-ocamlfuse ~/drive
+# google-drive-ocamlfuse ~/drive
 
 
 ###############################################################
 # Post install script - WineHQ
 ###############################################################
 
-winecfg
+# winecfg
 
 
 ###############################################################
