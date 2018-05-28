@@ -168,7 +168,7 @@ sudo service apache2 restart
 
 # Adding hosts (/etc/hosts)
 
-sudo sed -i 's/localhost/localhost\
+sudo sed -i 's/\tlocalhost/\tlocalhost\
 \
 127.0.0.1	\t	dv \
 \
@@ -201,17 +201,27 @@ sudo du -sh /var/cache/apt
 sudo apt-get clean
 sudo du -sh /var/cache/apt
 
+
 ###############################################################
 # System information
 ###############################################################
 
 lsb_release -a
 
+
 ###############################################################
-# Google Drive
+# Post install script - Google Drive
 ###############################################################
 
 sudo mkdir ~/drive
 google-drive-ocamlfuse ~/drive
 
 
+###############################################################
+# Post install script - WineHQ
+###############################################################
+
+winecfg
+
+
+###############################################################
