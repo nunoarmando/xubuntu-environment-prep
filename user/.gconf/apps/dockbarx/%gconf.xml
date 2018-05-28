@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <gconf>
-	<entry name="launchers" mtime="1526246218" type="list" ltype="string">
+	<entry name="launchers" mtime="1527465211" type="list" ltype="string">
 		<li type="string">
 			<stringvalue>thunar;/usr/share/xubuntu/applications/Thunar.desktop</stringvalue>
 		</li>
@@ -23,7 +23,10 @@
 			<stringvalue>exo-terminal-emulator;/usr/share/applications/exo-terminal-emulator.desktop</stringvalue>
 		</li>
 		<li type="string">
-			<stringvalue>code;/home/nuno/.dockbarx/launchers/code.desktop</stringvalue>
+			<stringvalue>code;/usr/share/applications/code.desktop</stringvalue>
+		</li>
+		<li type="string">
+			<stringvalue>wine;/home/nuno/.dockbarx/launchers/wine.desktop</stringvalue>
 		</li>
 	</entry>
 	<entry name="groupbutton_left_click_double" mtime="1526038655" type="bool" value="false"/>
