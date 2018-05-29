@@ -112,7 +112,7 @@ LIST_OF_APPS="\
 	docker-ce \
 	docker-compose \
 	google-chrome-stable \
-	winehq-stable \
+	winehq-stable winetricks \
 	filezilla \
 	skypeforlinux \
 	meld \
