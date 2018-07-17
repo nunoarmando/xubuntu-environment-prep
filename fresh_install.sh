@@ -4,9 +4,9 @@
 # User variables
 ###############################################################
 
-U_USER="nuno"
-U_GIT_USER="nuno@smart-gdpr.eu"
-U_GIT_NAME="nunoGitUser"
+U_USER="yoel"
+U_GIT_USER="yoel@smart-gdpr.eu"
+U_GIT_NAME="Yoel Lachaux"
 
 
 ###############################################################
